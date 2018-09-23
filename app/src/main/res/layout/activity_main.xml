@@ -5,41 +5,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#068fcc"
-    tools:context="com.example.marenjifo.retodeezerg.MainActivity">
+    tools:context="com.example.marenjifo.retodeezerg.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
 
     <EditText
         android:id="@+id/et_busqueda"
-        android:layout_width="310dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="9dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="11dp"
         android:layout_marginEnd="1dp"
+
         android:ems="10"
         android:hint="Lista"
         android:inputType="textPersonName"
-
         app:layout_constraintBottom_toTopOf="@+id/_dynamic"
-        app:layout_constraintEnd_toStartOf="@+id/ib_buqueda"
+        app:layout_constraintEnd_toStartOf="@+id/ib_lupita"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ib_atras" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/ib_lupita"
         android:layout_width="0dp"
-        android:layout_height="49dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="1dp"
         app:layout_constraintBottom_toTopOf="@+id/_dynamic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/et_buscar"
+        app:layout_constraintStart_toEndOf="@+id/et_busqueda"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_search_category_default" />
 
     <ListView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:id="@+id/lv_listas"
-        android:layout_width="368dp"
-        android:layout_height="446dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="57dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_lupita" />
 
 </android.support.constraint.ConstraintLayout>
