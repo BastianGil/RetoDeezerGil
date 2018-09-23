@@ -2,29 +2,29 @@ package com.example.marenjifo.retodeezerg;
 
 public class Lista {
 
-    private String nombre;
-    private String usuario;
-    private String canciones;
+    private String nomlist;
+    private String usu;
+    private String cancn;
 
-    public Lista(String nombre, String usuario, String canciones) {
-        this.nombre = nombre;
-        this.usuario = usuario;
-        this.canciones = canciones;
+    public Lista(String nomlist, String usu, String cancn) {
+        this.nomlist = nomlist;
+        this.usu = usu;
+        this.cancn = cancn;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getnomlist() {
+        return nomlist;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setnomlist(String nomlist) {
+        this.nomlist = nomlist;
     }
 
-    public String getUsuario() { return usuario;}
+    public String getusu() { return usu;}
 
-    public void setUsuario(String usuario) { this.usuario = usuario; }
+    public void setusu(String usu) { this.usu = usu; }
 
-    public String getCanciones() { return canciones; }
+    public String getCancn() { return cancn; }
 
-    public void setCanciones(String canciones) { this.canciones = canciones; }
+    public void setCancn(String cancn) { this.cancn = cancn; }
 }

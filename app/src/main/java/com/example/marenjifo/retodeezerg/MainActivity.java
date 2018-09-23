@@ -12,6 +12,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private ListView lv_listas;
+
     ListaAdapter customAdapter;
 
 
@@ -21,12 +22,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         lv_listas=findViewById(R.id.lv_listas);
+
+
         customAdapter= new ListaAdapter(this);
         lv_listas.setAdapter(customAdapter);
 
 
 
-        Lista lista1= new Lista("Musica Pop","marenjifo","10");
+        Lista lista1= new Lista("rnb","sebitasBB","1");
         customAdapter.agregarLista(lista1);
 
 

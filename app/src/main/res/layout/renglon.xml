@@ -16,21 +16,21 @@
     android:padding="10dp"
     android:hint="Nombre"
     android:background="#bebebe"
-    android:id="@+id/item_nombre"/>
+    android:id="@+id/item_nomlist"/>
 
     <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"
     android:hint="Usuario"
-    android:id="@+id/item_usuario"/>
+    android:id="@+id/item_usu"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:hint="No. de canciones"
-        android:id="@+id/item_canciones"/>
+        android:id="@+id/item_cancn"/>
 
 
 

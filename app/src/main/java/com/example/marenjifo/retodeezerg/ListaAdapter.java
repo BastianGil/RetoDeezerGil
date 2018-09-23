@@ -43,14 +43,21 @@ public class ListaAdapter extends BaseAdapter {
         LayoutInflater inflater = activity.getLayoutInflater();
         //Inflater pasa de XML a View
         View renglon = inflater.inflate(R.layout.renglon, null, false);
-        TextView item_nombre = renglon.findViewById(R.id.item_nombre);
-        TextView item_usuario = renglon.findViewById(R.id.item_usuario);
-        TextView item_canciones = renglon.findViewById(R.id.item_canciones);
+
+        TextView item_nombre = renglon.findViewById(R.id.item_nomlist);
 
 
-        item_nombre.setText(listas.get(position).getNombre());
-        item_usuario.setText("creado por:  "+listas.get(position).getUsuario());
-        item_canciones.setText("no. de canciones:  "+listas.get(position).getCanciones());
+        TextView item_usuario = renglon.findViewById(R.id.item_usu);
+
+
+        TextView item_canciones = renglon.findViewById(R.id.item_cancn);
+
+
+        item_nombre.setText(listas.get(position).getnomlist());
+
+
+        item_usuario.setText(" usuario:  "+listas.get(position).getusu());
+        item_canciones.setText("# de canciones:  "+listas.get(position).getCancn());
 
         return renglon;
     }
